@@ -1,15 +1,459 @@
-<!DOCTYPE html><html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Viagem à Madeira</title><style>
-body{font-family:Arial,sans-serif;background:#f4f8fb;margin:0}header{background:#2563eb;color:#fff;padding:30px;text-align:center}.container{max-width:900px;margin:auto;padding:20px}.event{background:#fff;margin:12px 0;padding:15px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.1)}.time{font-weight:bold;color:#2563eb}.place{font-size:1.1em;font-weight:bold}.transport{color:#666}
-</style></head><body><header><h1>🌴 Viagem à Madeira</h1><p>Itinerário</p></header><div class="container"><h2>Dia 1</h2>
-<div class="event"><div class="transport">🚗 Carro (5 min)</div><div class="time">11:00</div><div class="place">Cristo Rei do Garajau</div></div>
-<div class="event"><div class="transport">🚗 Carro (15 min)</div><div class="time">12:00</div><div class="place">Parque Almirante Reis</div></div>
-<div class="event"><div class="time">12:10</div><div class="place">Mercado dos Lavradores</div></div>
-<div class="event"><div class="time">13:00</div><div class="place">Almoço - Adega Típica do Funchal</div></div>
-<div class="event"><div class="time">14:30</div><div class="place">Catedral do Funchal</div></div>
-<div class="event"><div class="time">14:45</div><div class="place">Rua de Santa Maria</div></div>
-<div class="event"><div class="time">14:55</div><div class="place">Capela do Corpo Santo</div></div>
-<div class="event"><div class="time">15:00</div><div class="place">Forte de São Tiago</div></div>
-<div class="event"><div class="time">15:30</div><div class="place">Teleférico do Funchal</div></div>
-<div class="event"><div class="time">16:00</div><div class="place">Monte Palace Tropical Garden</div></div>
-<div class="event"><div class="time">17:00</div><div class="place">Monte Toboggan Ride</div><div class="transport">09:00–18:00 · Igreja de Nossa Senhora do Monte</div></div>
-</div></body></html>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem à Madeira</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- HEADER -->
+    <!-- ===================================================== -->
+
+    <header>
+
+        <div class="hero">
+
+            <h1>🌴 Viagem à Madeira</h1>
+
+            <p>
+                Itinerário completo da viagem
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- MENU DOS DIAS -->
+    <!-- ===================================================== -->
+
+    <nav class="day-menu">
+
+        <button class="active" onclick="showDay('day1')">
+            Dia 1
+        </button>
+
+        <button onclick="showDay('day2')">
+            Dia 2
+        </button>
+
+        <button onclick="showDay('day3')">
+            Dia 3
+        </button>
+
+        <button onclick="showDay('day4')">
+            Dia 4
+        </button>
+
+        <button onclick="showDay('day5')">
+            Dia 5
+        </button>
+
+    </nav>
+
+    <!-- ===================================================== -->
+    <!-- DIA 1 -->
+    <!-- ===================================================== -->
+
+    <main>
+
+        <section id="day1" class="day active">
+
+            <h2>📅 Dia 1</h2>
+
+            <!-- ====================================== -->
+            <!-- Cristo Rei -->
+            <!-- ====================================== -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img
+                        src="images/cristo-rei.webp"
+                        alt="Cristo Rei do Garajau"
+                        loading="lazy">
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="time">
+                        11:00
+                    </span>
+
+                    <h3>
+                        Cristo Rei do Garajau
+                    </h3>
+
+                    <p class="transport">
+                        🚗 Carro (5 minutos)
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="https://maps.app.goo.gl/PAoQ72yPaD9XA3Tn8"
+                            target="_blank">
+
+                            📍 Google Maps
+
+                        </a>
+
+                        <a
+                            href="https://maps.app.goo.gl/ozebeKouA9kZRJB7A"
+                            target="_blank">
+
+                            🅿️ Estacionamento
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- ====================================== -->
+            <!-- Parque Almirante Reis -->
+            <!-- ====================================== -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">
+                        12:00
+                    </span>
+
+                    <h3>
+                        Parque Almirante Reis
+                    </h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/PpMpS4WYi6LtTURs8"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ====================================== -->
+            <!-- Mercado -->
+            <!-- ====================================== -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img
+                        src="images/mercado-lavradores.webp"
+                        alt="Mercado dos Lavradores"
+                        loading="lazy">
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="time">
+                        12:10
+                    </span>
+
+                    <h3>
+                        Mercado dos Lavradores
+                    </h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/zW6LcF2h2anhR78Y8"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ====================================== -->
+            <!-- Almoço -->
+            <!-- ====================================== -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">
+                        13:00
+                    </span>
+
+                    <h3>
+                        Almoço
+                    </h3>
+
+                    <p>Adega Típica do Funchal</p>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/RDsN9NP6drpTmxzd9"
+                        target="_blank">
+
+                        📍 Restaurante
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ====================================== -->
+            <!-- Catedral -->
+            <!-- ====================================== -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img
+                        src="images/catedral-funchal.webp"
+                        alt="Catedral do Funchal"
+                        loading="lazy">
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="time">
+                        14:30
+                    </span>
+
+                    <h3>
+                        Catedral do Funchal
+                    </h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/Nr2hfgbcrh4pKNnR9"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Rua Santa Maria -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">14:45</span>
+
+                    <h3>Rua de Santa Maria</h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/ETQ15nj5ywVze3AZ9"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Capela -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img
+                        src="images/capela-corpo-santo.webp"
+                        alt="Capela do Corpo Santo"
+                        loading="lazy">
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="time">14:55</span>
+
+                    <h3>Capela do Corpo Santo</h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/rAfCRNeXFVR9eDEcA"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Forte -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img
+                        src="images/forte-sao-tiago.webp"
+                        alt="Forte de São Tiago"
+                        loading="lazy">
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="time">15:00</span>
+
+                    <h3>Forte de São Tiago</h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/eGrw5ugPXa8EmciF7"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Teleférico -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">15:30</span>
+
+                    <h3>Teleférico do Funchal</h3>
+
+                    <a
+                        class="map-button"
+                        href="https://maps.app.goo.gl/pJL3c9Ns9f4QdG6P7"
+                        target="_blank">
+
+                        📍 Google Maps
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Monte Palace -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">16:00</span>
+
+                    <h3>Monte Palace Tropical Garden</h3>
+
+                </div>
+
+            </article>
+
+            <!-- Toboggan -->
+
+            <article class="activity">
+
+                <div class="activity-content">
+
+                    <span class="time">17:00</span>
+
+                    <h3>Monte Toboggan Ride</h3>
+
+                    <p>
+                        Horário: 09:00 - 18:00
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- DIA 2 -->
+        <!-- ===================================================== -->
+
+        <section id="day2" class="day">
+
+            <h2>📅 Dia 2</h2>
+
+            <p>
+                A adicionar...
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+
+        <section id="day3" class="day">
+
+            <h2>📅 Dia 3</h2>
+
+            <p>
+                A adicionar...
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+
+        <section id="day4" class="day">
+
+            <h2>📅 Dia 4</h2>
+
+            <p>
+                A adicionar...
+            </p>
+
+        </section>
+
+        <!-- ===================================================== -->
+
+        <section id="day5" class="day">
+
+            <h2>📅 Dia 5</h2>
+
+            <p>
+                A adicionar...
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

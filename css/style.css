@@ -1,0 +1,472 @@
+/* ==========================================================
+   VIAGEM À MADEIRA
+   style.css
+========================================================== */
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:#eef3f8;
+
+    color:#2c3e50;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    background:
+        linear-gradient(
+            135deg,
+            #0077b6,
+            #00b4d8
+        );
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.hero h1{
+
+    font-size:2.6rem;
+
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    font-size:1.1rem;
+
+    opacity:.95;
+
+}
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.day-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    padding:18px;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.day-menu button{
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.day-menu button:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.day-menu button.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
+
+main{
+
+    width:min(1200px,95%);
+
+    margin:auto;
+
+    padding:35px 0 60px;
+
+}
+
+.day{
+
+    display:none;
+
+}
+
+.day.active{
+
+    display:block;
+
+}
+
+.day h2{
+
+    margin-bottom:30px;
+
+    color:#1e3a8a;
+
+    font-size:2rem;
+
+}
+
+/* ==========================================================
+   CARTÃO DA ATIVIDADE
+========================================================== */
+
+.activity{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    margin-bottom:35px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.activity:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.activity-image{
+
+    width:100%;
+
+}
+
+.activity-image img{
+
+    width:100%;
+
+    height:340px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
+
+.activity-content{
+
+    padding:24px;
+
+}
+
+.time{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+.activity-content h3{
+
+    font-size:1.7rem;
+
+    margin-bottom:10px;
+
+}
+
+.transport{
+
+    color:#64748b;
+
+    margin-bottom:18px;
+
+    font-style:italic;
+
+}
+
+/* ==========================================================
+   BOTÕES
+========================================================== */
+
+.buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.buttons a,
+.map-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.buttons a:hover,
+.map-button:hover{
+
+    background:#1d4ed8;
+
+}
+
+.buttons a:last-child{
+
+    background:#16a34a;
+
+}
+
+.buttons a:last-child:hover{
+
+    background:#15803d;
+
+}
+
+/* ==========================================================
+   INFO EXTRA
+========================================================== */
+
+.activity-content p{
+
+    margin-top:8px;
+
+    margin-bottom:15px;
+
+    color:#475569;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#64748b;
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+========================================================== */
+
+@media (max-width:900px){
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .activity-image img{
+
+        height:260px;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .day-menu{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        padding:12px;
+
+        scrollbar-width:none;
+
+    }
+
+    .day-menu::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .day-menu button{
+
+        flex:0 0 auto;
+
+    }
+
+    .activity-content{
+
+        padding:18px;
+
+    }
+
+    .activity-content h3{
+
+        font-size:1.35rem;
+
+    }
+
+    .activity-image img{
+
+        height:220px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+    .buttons a,
+    .map-button{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:450px){
+
+    header{
+
+        padding:35px 15px;
+
+    }
+
+    .hero h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+    }
+
+    .day h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .activity-image img{
+
+        height:190px;
+
+    }
+
+}
